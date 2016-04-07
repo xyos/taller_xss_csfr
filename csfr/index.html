@@ -1,0 +1,14 @@
+<html>
+  <body>
+      <script>
+        function put() {
+          var x = new XMLHttpRequest();
+          x.open("POST","http://localhost/csfr/transfer/",true);
+          x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
+          x.send("name=bob&amount=200"); 
+        }
+      </script>
+      <button onclick='put();'>cargar video</button>
+      Loading video...
+  </body>
+</html>
